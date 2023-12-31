@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Multi Step Form</title>
+   <link rel="shortcut icon" href="assets/images/figma_logo.svg" type="image/x-icon" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Allan&family=Anton&family=Baskervville&family=Bebas+Neue&family=DM+Serif+Display&family=Inter&family=Libre+Baskerville&family=Lora&family=Merriweather&family=Metal+Mania&family=Nosifer&family=Nunito+Sans:opsz@6..12&family=Oswald&family=Playfair+Display&family=Poppins&family=Raleway&family=Roboto&family=Space+Mono&family=Ubuntu&display=swap"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="assets/styles/reset.css" />
+   <link rel="stylesheet" href="assets/styles/color.css" />
+   <link rel="stylesheet" href="assets/styles/fonts.css" />
+   <link rel="stylesheet" href="assets/styles/button.css" />
+   <link rel="stylesheet" href="assets/styles/media.css">
+   <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+
+<body>
+   <main class="form__main">
+      <aside class="form__aside">
+         <div class="form__steps">
+            <div class="form__aside-steps active" data-steps="1">
+               <div class="aside__steps">
+                  <span class="aside__steps-head">1</span>
+               </div>
+               <div class="aside__steps-info">
+                  <span class="aside__steps-title">STEP 1</span>
+                  <h3 class="aside__steps-subtitle">INFO</h3>
+               </div>
+            </div>
+            <div class="form__aside-steps" data-steps="1">
+               <div class="aside__steps">
+                  <span class="aside__steps-head">2</span>
+               </div>
+               <div class="aside__steps-info">
+                  <span class="aside__steps-title">STEP</span>
+                  <h3 class="aside__steps-subtitle">SELECT PLAN</h3>
+               </div>
+            </div>
+            <div class="form__aside-steps" data-steps="1">
+               <div class="aside__steps">
+                  <span class="aside__steps-head">3</span>
+               </div>
+               <div class="aside__steps-info">
+                  <span class="aside__steps-title">STEP 3</span>
+                  <h3 class="aside__steps-subtitle">ADD-ONS</h3>
+               </div>
+            </div>
+            <div class="form__aside-steps" data-steps="1">
+               <div class="aside__steps">
+                  <span class="aside__steps-head">4</span>
+               </div>
+               <div class="aside__steps-info">
+                  <span class="aside__steps-title">STEP 4</span>
+                  <h3 class="aside__steps-subtitle">SUMMARY</h3>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="form__aside-underground bg1">
+            <img src="assets/images/Oval.svg" alt="">
+         </div>
+         <div class="form__aside-underground bg2">
+            <img src="assets/images/Oval2.svg" alt="Oval" class="assets__oval">
+         </div>
+         <div class="form__aside-underground bg3">
+            <img src="assets/images/Oval (1).svg" alt="Oval1" class="assets__oval1">
+         </div>
+         <div class="form__aside-underground bg4">
+            <img src="assets/images/Group-10.svg" alt="Group-10" class="assets__right">
+         </div>
+      </aside>
+      <article class="form">
+         <div class="form__article form__page">
+            <div class="page__head">
+               <div class="form__content">
+                  <h1 class="form__title">Personal info</h1>
+                  <p class="form__subtitle">
+                     Please provide your name, email address, and phone number.
+                  </p>
+               </div>
+               <form class="article__register">
+                  <div class="article__register-text">
+                     <label for="text">Name</label>
+                     <p class="errorMessage"></p>
+                     <input type="text" name="text" id="text" class="register__text" placeholder="e.g. Stephen King"
+                        autocomplete="off" value="murad gurbanzada" />
+                  </div>
+                  <div class="article__register-text">
+                     <label for="email">Email Address</label>
+                     <p class="errorMessage"></p>
+                     <input type="email" name="email" id="email" class="register__text"
+                        placeholder="e.g. stephenking@lorem.com" autocomplete="off" value="murad@mail.ru" />
+                  </div>
+                  <div class="article__register-text">
+                     <label for="number">Phone Number</label>
+                     <p class="errorMessage"></p>
+                     <input type="number" name="number" id="number" class="register__text"
+                        placeholder="e.g. +1 234 567 890" autocomplete="off" value="0504924707" />
+                  </div>
+               </form>
+            </div>
+            <div class="form__article-btn width-60">
+               <button type="submit" class="btn-primary btn-primary--font">
+                  Next Step
+               </button>
+            </div>
+         </div>
+
+         <div class="form__plan form__page display">
+            <div class="page__head">
+               <div class="form__content">
+                  <h1 class="form__title">Select your plan</h1>
+                  <p class="form__subtitle">
+                     You have the option of monthly or yearly billing.
+                  </p>
+               </div>
+               <div class="form__plan-selects gap20">
+                  <div class="plan__select selected">
+                     <figure>
+                        <img src="assets/images/Group 11.svg" alt="Group" />
+                     </figure>
+                     <div class="plan__options">
+                        <span class="plan__options-name">Arcade</span>
+                        <span class="plan__options-value">$9/mo</span>
+                        <span class="yearly__value"></span>
+                     </div>
+                  </div>
+                  <div class="plan__select">
+                     <figure>
+                        <img src="assets/images/Group 12 (1).svg" alt="Group" />
+                     </figure>
+                     <div class="plan__options">
+                        <span class="plan__options-name">Advanced</span>
+                        <span class="plan__options-value">$12/mo</span>
+                        <span class="yearly__value"></span>
+                     </div>
+                  </div>
+                  <div class="plan__select">
+                     <figure>
+                        <img src="assets/images/Group 13.svg" alt="Group" />
+                     </figure>
+                     <div class="plan__options">
+                        <span class="plan__options-name">Pro</span>
+                        <span class="plan__options-value">$15/mo</span>
+                        <span class="yearly__value"></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="form__plan-toggle">
+                  <span class="form__plan-month cash changed">Monthly</span>
+                  <div id="toggle">
+                     <i class="indicator"></i>
+                  </div>
+                  <span class="form__plan-year cash">Yearly</span>
+               </div>
+            </div>
+            <div class="plan__btn change__btn">
+               <button class="btn-success-font">Go Back</button>
+               <button class="btn-primary btn-primary--font">Next Step</button>
+            </div>
+         </div>
+         <div class="form__pick form__page display">
+            <div class="page__head">
+               <div class="form__content">
+                  <h1 class="form__title">Pick add-ons</h1>
+                  <p class="form__subtitle">
+                     Add-ons help enhance your gaming experience.
+                  </p>
+               </div>
+               <div class="form__pick-settings">
+                  <form class="pick__settings">
+                     <input type="checkbox" name="checkbox" class="pick__checkbox">
+                     <div class="settings__text">
+                        <span class="settings__title title__settings">Online service</span>
+                        <span class="settings__subtitle">Access to multiplayer games</span>
+                     </div>
+                     <span class="settings__subtitle settings__subtitle--price">+$1/mo</span>
+                  </form>
+                  <form class="pick__settings">
+                     <input type="checkbox" name="checkbox" class="pick__checkbox" />
+                     <div class="settings__text">
+                        <span class="settings__title title__settings">Larger storage</span>
+                        <span class="settings__subtitle">Extra 1TB of cloud save</span>
+                     </div>
+                     <span class="settings__subtitle settings__subtitle--price">+$2/mo</span>
+                  </form>
+                  <form class="pick__settings">
+                     <input type="checkbox" name="checkbox" class="pick__checkbox" />
+                     <div class="settings__text">
+                        <span class="settings__title title__settings">Customizable profile</span>
+                        <span class="settings__subtitle">Custom theme on your profile</span>
+                     </div>
+                     <span class="settings__subtitle settings__subtitle--price">+$2/mo</span>
+                  </form>
+               </div>
+            </div>
+            <div class="plan__btn pick__btn">
+               <button class="btn-success-font">Go Back</button>
+               <button class="btn-primary btn-primary--font">Next Step</button>
+            </div>
+         </div>
+         <div class="form__page display finishing__up">
+            <div class="page__head">
+               <div class="form__content">
+                  <h1 class="form__title">Finishing up</h1>
+                  <p class="form__subtitle">
+                     Double-check everything looks OK before confirming.
+                  </p>
+               </div>
+               <div class="form__total-finish">
+                  <div class="form__total">
+                     <div class="total__title js-between">
+                        <div class="title__value">
+                           <div class="title__head">
+                              <span class="value__title settings__title">Arcade </span><span
+                                 class="value__title--pick">(Monthly)</span>
+                           </div>
+                           <span class="value__subtitle settings__subtitle">Change</span>
+                        </div>
+                        <span class="total__title-price">$9/mo</span>
+                     </div>
+                     <hr />
+                     <div class="total__pick">
+                        <!-- <div class="total__picks js-between">
+                           <span class="picks__value settings__subtitle">Online service</span>
+                           <span class="picks__price settings__subtitle">+$1/mo</span>
+                        </div>
+                        <div class="total__picks js-between">
+                           <span class="picks__value total__name  settings__subtitle">Larger</span>
+                           <span class="picks__price settings__subtitle">+$2/mo</span>
+                        </div>
+                        <div class="total__picks js-between">
+                           <span class="picks__value total__name  settings__subtitle">Larger</span>
+                           <span class="picks__price settings__subtitle">+$2/mo</span>
+                        </div> -->
+                     </div>
+                  </div>
+                  <div class="form__finish js-between">
+                     <span class="settings__subtitle total__finish">Total <span class="finish__pick">(per
+                           month)</span></span>
+                     <span class="finish__price">+$12/mo</span>
+                  </div>
+               </div>
+            </div>
+            <div class="plan__btn confirm">
+               <button class="btn-success-font">Go Back</button>
+               <button class="btn-primary btn-primary--font btn-long">
+                  Confirm
+               </button>
+            </div>
+         </div>
+         <div class="form__page display tcenter">
+            <div class="page__head gap24">
+               <figure>
+                  <img src="assets/images/Check.svg" alt="Check" class="check__img">
+               </figure>
+               <div class="form__content">
+                  <h1 class="form__title">Thank you!</h1>
+                  <p class="form__subtitle">
+                     Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need
+                     support, please feel free to email us at support@loremgaming.com.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </article>
+   </main>
+</body>
+<script src="assets/js/main.js"></script>
+
+</html>

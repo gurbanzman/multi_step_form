@@ -1,0 +1,11 @@
+.btn-primary{
+   padding: 15px 24px;
+   border-radius: 8px;
+   background: var(--denim, #022959);
+   cursor: pointer;
+}
+
+.btn-long{
+   padding: 14px 30px;
+   background: var(--purple, #483EFF);
+}
