@@ -1,0 +1,144 @@
+.primary-font {
+   color: var(--white);
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.multi__step-list-step {
+   color: var(--light-blue, #ABBCFF);
+   font-feature-settings: 'clig' off, 'liga' off;
+
+   /* Body (S) */
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.multi__step-list-info {
+   color: var(--white, #FFF);
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+
+.multi__shop-title-user,
+.multi__shop-end-title {
+   color: var(--denim, #022959);
+   font-feature-settings: 'clig' off, 'liga' off;
+
+   /* Heading */
+   font-size: 32px;
+   font-weight: 700;
+}
+
+.multi__shop-title-info,
+.multi__shop-end-message {
+   color: var(--grey, #9699AA);
+   font-feature-settings: 'clig' off, 'liga' off;
+
+   /* Body (L) */
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25px;
+   /* 156.25% */
+}
+
+
+.multi__shop-form-single-text,
+.multi__shop-option-title {
+   color: var(--denim, #022959);
+   font-feature-settings: 'clig' off, 'liga' off;
+
+   /* Body (M) */
+   font-size: 16px;
+   font-weight: 400;
+}
+
+
+.multi__shop-form-single-input::placeholder {
+   color: var(--grey, #9699AA);
+   font-feature-settings: 'clig' off, 'liga' off;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 25px;
+   /* 156.25% */
+}
+
+.multi__shop-option-offer {
+   position: absolute;
+   bottom: 5px;
+   color: var(--denim, #022959);
+   font-feature-settings: 'clig' off, 'liga' off;
+
+   /* Body (S) */
+   font-size: 12px;
+   font-weight: 400;
+}
+
+.btn-less {
+   color: var(--grey, #9699AA);
+   font-size: 16px;
+   font-weight: 500;
+   background: none;
+   cursor: pointer;
+}
+
+.multi__shop-option-value {
+   color: var(--grey, #9699AA);
+   font-feature-settings: 'clig' off, 'liga' off;
+   /* Body (M) */
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.multi__shop-types-text {
+   color: var(--grey, #9699AA);
+   font-feature-settings: 'clig' off, 'liga' off;
+   font-size: 14px;
+   font-weight: 700;
+}
+
+.multi__shop-ons-ad-variable-title,
+.multi__shop-board-plan-title {
+   color: var(--denim, #022959);
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.multi__shop-ons-add-price,
+.multi__shop-ons-ad-variable-info,
+.board_font,
+.multi__shop-ons-total-add-title,
+.multi__shop-ons-total-add-price,
+.multi__shop-finally-total {
+   color: var(--grey, #9699AA);
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+   /* 142.857% */
+}
+
+.multi__shop-ons-total-add-price {
+   color: var(--denim);
+}
+
+.multi__shop-ons-add-price {
+   color: var(--purple, #483EFF);
+}
+
+.multi__shop-total-price {
+   color: var(--denim, #022959);
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 20px;
+   /* 125% */
+}
+
+.multi__shop-finally-price {
+   color: var(--purple, #483EFF);
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 20px;
+   /* 100% */
+}

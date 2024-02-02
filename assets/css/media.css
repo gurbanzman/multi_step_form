@@ -1,0 +1,193 @@
+@media screen and (max-width:1440px) {
+   .multi__shop-types {
+      margin-bottom: 20% !important;
+   }
+
+   .multi__shop-ons {
+      margin-bottom: 15.3% !important;
+   }
+}
+
+@media screen and (max-width:1024px) {
+   .container {
+      width: 90% !important;
+   }
+
+   .multi__shop-types {
+      margin-bottom: 21.7% !important;
+   }
+
+   .multi__shop-ons {
+      margin-bottom: 16.3% !important;
+   }
+}
+
+@media screen and (max-width:768px) {
+
+   body {
+      overflow: hidden;
+   }
+
+   .multi {
+      position: relative;
+      flex-direction: column;
+      background: none !important;
+   }
+
+   .container {
+      width: 97% !important;
+      margin: 30px auto !important;
+   }
+
+   .multi__step {
+      width: 100% !important;
+      height: 12rem !important;
+      z-index: -1 !important;
+   }
+
+   .multi__step-lists {
+      flex-direction: row !important;
+      justify-content: center;
+   }
+
+   .multi__step-list-text,
+   .multi__shop-title {
+      display: none !important;
+   }
+
+   .orange ,
+   .red {
+      bottom: -11% !important;
+   }
+
+   .purple {
+      bottom: -2% !important;
+   }
+
+   .triess {
+      right: 26% !important;
+      bottom: 12% !important;
+   }
+
+   .multi__shop {
+     width: 100% !important;
+   }
+
+   .multi__shop-title,
+   .multi__shop-form,
+   .multi__shop-selects,
+   .multi__shop-ons,
+   .multi__shop-total,
+   .multi__shop-end {
+      position: relative;
+      width: 90% !important;
+      margin: auto;
+      background: var(--white);
+      padding: 20px;
+      margin-top: -50px;
+      border-radius: 8px;
+      z-index: 1;
+   }
+
+   .multi__shop-btn {
+      margin-top: 12.5% !important;
+   }
+
+   .multi__shop-selects {
+      justify-content: space-evenly !important;
+      gap: 10px;
+   }
+
+   .multi__shop-types {
+      margin-bottom: 18.6% !important;
+      width: 90% !important;
+      margin: auto;
+   }
+
+   .multi__shop-ons {
+      margin-bottom: 21.7% !important;
+   }
+
+   .multi__shop-finally {
+      padding: 24px 64px !important;
+      margin-bottom: 28%;
+   }
+}
+
+@media screen and (max-width:375px) {
+   .container {
+      margin: 0px auto !important;
+   }
+
+   .multi {
+      padding: 0px !important;
+      width: 100% !important;
+   }
+
+   .multi__step {
+      border-radius: 0px !important;
+   }
+
+   .multi__step-lists {
+      position: relative;
+      z-index: 2 !important;
+   }
+
+   .multi__shop-title {
+      display: flex !important;
+   }
+
+   .multi__shop-form,
+   .multi__shop-selects {
+      position: relative;
+      width: 90% !important;
+      margin: auto;
+      background: var(--white);
+      padding: 20px;
+      border-radius: 8px;
+      z-index: 1;
+   }
+
+   .multi__shop-form {
+      margin-top: -50px;
+      margin-bottom: 51% !important;
+   }
+
+   .multi__shop-selects {
+      margin-top: -12% !important;
+      flex-direction: column !important;
+   }
+   
+   .multi__shop-option {
+      width: 100% !important;
+      gap: 20px !important;
+      flex-direction: row !important;
+   }
+
+   .multi__shop-btn {
+      padding: 20px 5px !important;
+   }
+
+   .multi__shop-types {
+      margin-bottom: 38% !important;
+   }
+
+   .multi__shop-ons-add {
+      padding: 15px !important;
+   }
+
+   .multi__shop-ons {
+      padding: 10px !important;
+      margin-bottom: 75% !important;
+   }
+
+   .multi__shop-ons-add-price {
+      right: 10px !important;
+   }
+
+   .multi__shop-title {
+      display: none !important;
+   }
+
+
+}

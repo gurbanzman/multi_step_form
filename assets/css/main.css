@@ -1,0 +1,385 @@
+@import url(reset.css);
+@import url(root.css);
+@import url(fonts.css);
+@import url(container.css);
+@import url(btn.css);
+@import url(images.css);
+@import url(media.css);
+
+body {
+   background: var(--body-bg);
+}
+
+.multi {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   border-radius: 15px;
+   background: var(--white, #FFF);
+   box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.10);
+   padding: 16px;
+}
+
+.multi__step {
+   position: relative;
+   width: 35%;
+   height: 40rem;
+   padding: 40px;
+   border-radius: 10px;
+
+   background: var(--purple);
+   overflow: hidden;
+   z-index: 99;
+}
+
+.multi__step-lists {
+   display: flex;
+   gap: 32px;
+   flex-direction: column;
+   align-items: flex-start;
+
+   >.multi__step-list {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+   }
+}
+
+.multi__step-list-value {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 33px;
+   height: 33px;
+
+   border: 2px solid var(--white);
+   border-radius: 50%;
+}
+
+.multi__step-list-value>span {
+   color: var(--white);
+   text-align: center;
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.multi__step-list-value.active {
+   border: 2px solid transparent;
+   background: var(--sky-blue);
+}
+
+.multi__step-list-value.active>span {
+   color: var(--denim);
+}
+
+.multi__step-list-text {
+   display: flex;
+   gap: 5px;
+   flex-direction: column;
+}
+
+.multi__step-bg {
+   position: absolute;
+}
+
+.orange {
+   left: 0;
+   bottom: 20px;
+   z-index: 1;
+}
+
+.purple {
+   left: 0;
+   bottom: -3px;
+   z-index: 0;
+}
+
+.red {
+   right: 0;
+   bottom: -3px;
+}
+
+.triess {
+   right: 60px;
+   bottom: 50px;
+}
+
+
+.multi__shop {
+   width: 58%;
+}
+
+.multi__shop-title {
+   display: flex;
+   gap: 11px;
+   flex-direction: column;
+}
+
+.multi__shop-about {
+   margin: 70px 0;
+}
+
+.multi__shop-form {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.multi__shop-form-single {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 8px;
+   flex-shrink: 0;
+}
+
+.multi__shop-form-single-input {
+   border-radius: 8px;
+   border: 1px solid var(--border-color, #D6D9E6);
+   background: var(--white, #FFF);
+
+   padding: 12px 16px;
+   width: 100%;
+
+   font-size: 16px;
+}
+
+.multi__shop-btn {
+   margin-top: 7%;
+
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row-reverse;
+}
+
+.multi__shop-main {
+   display: flex;
+   gap: 35px;
+   flex-direction: column-reverse;
+}
+
+
+.multi__shop-selects {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+   margin-top: 40px;
+}
+
+.multi__shop-option {
+   position: relative;
+   width: 30%;
+
+   display: flex;
+   gap: 40px;
+   flex-direction: column;
+   align-items: flex-start;
+
+   border-radius: 8px;
+   border: 1px solid var(--border-color, #D6D9E6);
+   background: var(--white, #FFF);
+   padding: 25px;
+   cursor: pointer;
+}
+
+.multi__shop-option.select {
+   border-radius: 8px;
+   border: 1px solid var(--purple, #483EFF);
+   background: var(--very-light-gray, #F8F9FF);
+}
+
+.multi__shop-option-info {
+   display: flex;
+   gap: 7px;
+   flex-direction: column;
+}
+
+
+.multi__shop-types {
+   display: flex;
+   gap: 24px;
+   align-items: center;
+   justify-content: center;
+
+   margin-top: 32px;
+   margin-bottom: 17%;
+   padding: 14px;
+   border-radius: 8px;
+   background: var(--very-light-gray);
+}
+
+.toggle {
+   position: relative;
+   width: 40px;
+   height: 20px;
+   order: 1;
+
+   background: var(--denim);
+   border-radius: 120px;
+   cursor: pointer;
+}
+
+.identikator {
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   background: var(--white);
+   top: 5px;
+   left: 5px;
+   border-radius: 50%;
+   transition: all 0.3s ease;
+}
+
+.active>.identikator {
+   left: 25px;
+}
+
+.active~.types--year,
+.types--month {
+   color: var(--denim) !important;
+}
+
+.active~.types--month {
+   color: var(--grey, #9699AA) !important;
+}
+
+
+.types--year {
+   order: 1;
+}
+
+.wrong {
+   border: 1px solid red;
+}
+
+.multi__shop-ons {
+   display: flex;
+   gap: 16px;
+   flex-direction: column;
+   margin-bottom: 13.3%;
+}
+
+.multi__shop-ons-ad-checked {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   appearance: none;
+   --webkit-appearance: none;
+   width: 20px;
+   height: 20px;
+   border-radius: 5px;
+   border: 1px solid var(--border-color);
+   cursor: pointer;
+}
+
+.multi__shop-ons-ad-checked:checked:after {
+   content: "\eb33";
+   color: var(--white);
+   font-family: "Icomoon";
+   font-weight: 900;
+   font-size: 13px;
+}
+
+.multi__shop-ons-ad-checked:checked{
+   background: var(--purple);
+   border: 1px solid transparent;
+}
+
+.multi__shop-ons-add {
+   position: relative;
+   border-radius: 8px;
+   border: 1px solid var(--border-color, #D6D9E6);
+   background: var(--white, #FFF);
+   padding: 18px 24px;
+
+   display: flex;
+   gap: 24px;
+   align-items: center;
+   flex-direction: row;
+}
+
+.multi__shop-ons-add.selected {
+   border: 1px solid var(--purple);
+   background: var(--very-light-grey, #F8F9FF);
+}
+
+.multi__shop-ons-ad-variable {
+   display: flex;
+   gap: 7px;
+   flex-direction: column;
+}
+
+.multi__shop-ons-add-price {
+   position: absolute;
+   right: 24px;
+}
+
+.multi__shop-total {
+   border-radius: 8px;
+   background: var(--Very-Light-Grey, #F8F9FF);
+   padding: 16px 24px;
+}
+
+.multi__shop-ons-total-add,
+.multi__shop-total-board,
+.multi__shop-finally {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.multi__shop-total-board {
+   margin-bottom: 24px;
+}
+
+.multi__shop-board-plan {
+   display: flex;
+   gap: 7px;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.multi__shop-total-line {
+   width: 100%;
+   border: 1px solid var(--grey);
+   opacity: 0.2043;
+}
+
+.multi__shop-total-ons {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   margin-top: 16px;
+}
+
+.multi__shop-finally {
+   padding: 24px;
+}
+
+.multi__shop-end,
+.multi__shop-end-text {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.multi__shop-end {
+   gap: 32px;
+}
+
+.multi__shop-end-text {
+   gap: 16px;
+}
+
+.multi__shop-end-message {
+   width: 62%;
+   text-align: center;
+}

@@ -1,0 +1,21 @@
+.btn-primary {
+   color: var(--white);
+   background: var(--denim);
+   
+   padding: 15px 25px;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.multi__shop-board-btn {
+   background: none;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.btn-confirm {
+   padding: 16px 30px;
+   border-radius: 8px;
+   background: var(--purple, #483EFF);
+   cursor: pointer;
+}
